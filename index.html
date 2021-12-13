@@ -5,11 +5,31 @@
 </body> 
 </center>
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
+  
+  .menu-bar {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu-bar > a {
+    color: #5C7457;
+    font-family: trattatello;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+  .menu-bar > a:hover {
+    color: hsl(160, 70%, 50%);
+    border-bottom: 2px solid hsl(160, 70%, 50%);
+  }
+  
+  @media (max-width: 400px) {
+    .menu-bar {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
   
  .gallery {
     display: grid;
@@ -27,15 +47,16 @@
   }
   
 .text {
-  position: absolute;
+  position: sticky;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(29, 106, 154, 0.72);
+  background: hsl(111, 14%, 56%);
   color: #fff;
   visibility: hidden;
   opacity: 0;
+  justify-content: center;
 
   transition: opacity .2s, visibility .2s;
 }
@@ -55,66 +76,74 @@
   }
   
 </style>
+
+<nav class="menu-bar">
+  <a href="#">music</a>
+  <a href="#">photos</a>
+  <a href="#">videos</a>
+  <a href="#">texts</a>
+</nav>
+
 <div class="gallery">
-  <img class="image" src="india.JPG" />
+  <img class="image" src="india.JPG">
   <p class="text">gateway of india, mumbai</p></div>
 <div class="gallery">
-  <img class="image" src="india2.JPG" />
+  <img class="image" src="india2.JPG">
   <p class="text">thane, india</p></div>
 <div class="gallery">
-  <img class="image" src="india3.JPG" />
+  <img class="image" src="india3.JPG">
   <p class="text">thane, india</p></div>
 <div class="gallery">
-  <img class="image" src="uchicago.jpg" />
+  <img class="image" src="uchicago.jpg">
   <p class="text">university of chicago, harper library</p></div>
 <div class="gallery">
-  <img class="image" src="chicago.JPG" />
+  <img class="image" src="chicago.JPG">
   <p class="text">university of chicago, main quad</p></div>
 <div class="gallery">
-  <img class="image" src="cobb.JPG" />
+  <img class="image" src="cobb.JPG">
   <p class="text">university of chicago, cobb gate</p></div>
 <div class="gallery">
-  <img class="image" src="nyc2.JPG" />
+  <img class="image" src="nyc2.JPG">
   <p class="text">new york city</p></div>
 <div class="gallery">
-  <img class="image" src="mexico.JPG" />
+  <img class="image" src="mexico.JPG">
   <p class="text">oaxaca, mexico</p></div>
 <div class="gallery">
-  <img class="image" src="nyc.JPG" />
+  <img class="image" src="nyc.JPG">
   <p class="text">new york city</p></div>
 <div class="gallery">
-  <img class="image" src="plane.JPG" />
+  <img class="image" src="plane.JPG">
   <p class="text">plane, above italy</p></div>
 <div class="gallery">
-  <img class="image" src="sweden.JPG" />
+  <img class="image" src="sweden.JPG">
   <p class="text">sweden</p></div>
 <div class="gallery">
-  <img class="image" src="peru.JPG" />
+  <img class="image" src="peru.JPG">
   <p class="text">cajamarca, peru</p></div>
 <div class="gallery">
-  <img class="image" src="italy.JPG" />
+  <img class="image" src="italy.JPG">
   <p class="text">italy</p></div>
 <div class="gallery">
-  <img class="image" src="italy2.JPG" />
+  <img class="image" src="italy2.JPG">
   <p class="text">lake como, italy</p></div>
 <div class="gallery">
-  <img class="image" src="italy3.JPG" />
+  <img class="image" src="italy3.JPG">
   <p class="text">lake como, italy</p></div>
 <div class="gallery">
-  <img class="image" src="chicago2.JPG" />
+  <img class="image" src="chicago2.JPG">
   <p class="text">the bean, chicago.</p></div>
 <div class="gallery">
-  <img class="image" src="france.JPG" />
+  <img class="image" src="france.JPG">
   <p class="text">versailles, france</p></div>
 <div class="gallery">
-  <img class="image" src="japan.jpeg" />
+  <img class="image" src="japan.jpeg">
   <p class="text">japan</p></div>
 <div class="gallery">
-  <img class="image" src="florida.JPG" />
+  <img class="image" src="florida.JPG">
   <p class="text">florida</p></div>
 <div class="gallery">
-  <img class="image" src="florida2.png" />
+  <img class="image" src="florida2.png">
   <p class="text">florida</p></div>
 <div class="gallery">
-  <img class="image" src="france2.png" />
+  <img class="image" src="france2.png">
   <p class="text">nice, france</p></div>
