@@ -1,12 +1,12 @@
 <center>
 <body style="font-family: trattatello" bgcolor="#FCF0CC" text= "#5C7457">
 
-<h1 style="font-size: 85px;"> travelogue by tara </h1>
+<h1 style="font-size: 85px;"> what i've been up to </h1>
 </body> 
 </center>
 <style>
-  
-  .menu-bar {
+
+ .menu-bar {
     display: flex;
     justify-content: space-around;
   }
@@ -19,8 +19,8 @@
   }
   
   .menu-bar > a:hover {
-    color: hsl(160, 70%, 50%);
-    border-bottom: 2px solid hsl(160, 70%, 50%);
+    color: hsl(111, 14%, 64%);
+    border-bottom: 2px solid hsl(111, 14%, 64%);
   }
   
   @media (max-width: 400px) {
@@ -30,58 +30,77 @@
     }
   }
 
-  
- .gallery {
-    display: grid;
+
+.gallery {
+  display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
     max-width: 630px;
     margin: 0 auto;
-  }
-  
-  .gallery > b {
-    width: 200px;
+   	position: relative;
+   	width: 200px;
     height: 200px;
+    float: left;
     background-position: center;
     background-size: cover;
-  }
-  
-.text {
-  position: sticky;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: hsl(111, 14%, 56%);
-  color: #fff;
-  visibility: hidden;
-  opacity: 0;
-  justify-content: center;
-
-  transition: opacity .2s, visibility .2s;
 }
 
-  .gallery > b: hover .text {
+.image {
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    max-width: 630px;
+    margin: 0 auto;
+   	position: relative;
+   	width: 200px;
+    height: 200px;
+    float: left;
+    background-position: center;
+    background-size: cover;
+}
+
+.text {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background: hsl(111, 14%, 56%);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  line-height: 185px;
+
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+  .gallery:hover .text {
     visibility: visible;
-    opacity: 1;
+    opacity: .5;
     border: 2px solid hsl(111, 14%, 56%);
     border-style: inset;
   }
 
   @media (max-width: 630px) {
-    .gallery {
-      flex-direction: column;
-      align-items: center;
+    .gallery > div {
+      width: calc(33vw - 10px);
+      height: calc(33vw - 10px);
     }
   }
   
 </style>
 
 <nav class="menu-bar">
-  <a href="#">music</a>
-  <a href="#">photos</a>
-  <a href="#">videos</a>
-  <a href="#">texts</a>
+  <a href="#">places i've been</a>
+  <a href="https://tmakhija51.github.io/songs/">what i'm listening to</a>
+  <a href="#">what i'm watching</a>
+  <a href="#">what i'm reading</a>
 </nav>
 
 <div class="gallery">
@@ -94,10 +113,10 @@
   <img class="image" src="india3.JPG">
   <p class="text">thane, india</p></div>
 <div class="gallery">
-  <img class="image" src="uchicago.jpg">
-  <p class="text">university of chicago, harper library</p></div>
+  <img class="image" src="uchicago.JPG">
+  <p class="text">university of chicago, harper memorial library</p></div>
 <div class="gallery">
-  <img class="image" src="chicago.JPG">
+  <img class="image" src="chicago.jpg">
   <p class="text">university of chicago, main quad</p></div>
 <div class="gallery">
   <img class="image" src="cobb.JPG">
@@ -113,16 +132,16 @@
   <p class="text">new york city</p></div>
 <div class="gallery">
   <img class="image" src="plane.JPG">
-  <p class="text">plane, above italy</p></div>
+  <p class="text">plane, italy from above</p></div>
 <div class="gallery">
   <img class="image" src="sweden.JPG">
-  <p class="text">sweden</p></div>
+  <p class="text">stockholm, sweden</p></div>
 <div class="gallery">
   <img class="image" src="peru.JPG">
   <p class="text">cajamarca, peru</p></div>
 <div class="gallery">
   <img class="image" src="italy.JPG">
-  <p class="text">italy</p></div>
+  <p class="text">lake como, italy</p></div>
 <div class="gallery">
   <img class="image" src="italy2.JPG">
   <p class="text">lake como, italy</p></div>
@@ -131,19 +150,19 @@
   <p class="text">lake como, italy</p></div>
 <div class="gallery">
   <img class="image" src="chicago2.JPG">
-  <p class="text">the bean, chicago.</p></div>
+  <p class="text">This image looks super neat.</p></div>
 <div class="gallery">
   <img class="image" src="france.JPG">
-  <p class="text">versailles, france</p></div>
+  <p class="text">the bean, chicago</p></div>
 <div class="gallery">
   <img class="image" src="japan.jpeg">
-  <p class="text">japan</p></div>
+  <p class="text">osaka, japan</p></div>
 <div class="gallery">
   <img class="image" src="florida.JPG">
-  <p class="text">florida</p></div>
+  <p class="text">florida, usa</p></div>
 <div class="gallery">
   <img class="image" src="florida2.png">
-  <p class="text">florida</p></div>
+  <p class="text">florida, usa</p></div>
 <div class="gallery">
   <img class="image" src="france2.png">
-  <p class="text">nice, france</p></div>
+  <p class="text">versailles, france</p></div>
