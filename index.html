@@ -37,9 +37,9 @@
     grid-gap: 10px;
     max-width: 630px;
     margin: 0 auto;
-
   }
-	.gallery > div {
+  
+  .gallery > b {
     width: 200px;
     height: 200px;
     background-position: center;
@@ -47,7 +47,7 @@
   }
   
 .text {
-  position: relative;
+  position: sticky;
   top: 0;
   bottom: 0;
   left: 0;
@@ -57,10 +57,11 @@
   visibility: hidden;
   opacity: 0;
   justify-content: center;
+
   transition: opacity .2s, visibility .2s;
 }
 
-  .gallery:hover .text {
+  .gallery > b: hover .text {
     visibility: visible;
     opacity: 1;
     border: 2px solid hsl(111, 14%, 56%);
@@ -68,9 +69,9 @@
   }
 
   @media (max-width: 630px) {
-    .gallery > div {
-      width: calc(33vw - 10px);
-      height: calc(33vw - 10px);
+    .gallery {
+      flex-direction: column;
+      align-items: center;
     }
   }
   
