@@ -17,6 +17,13 @@
     grid-gap: 10px;
     max-width: 630px;
     margin: 0 auto;
+   	position: relative;
+   	width: 200px;
+    height: 200px;
+    float: left;
+    background-position: center;
+    background-size: cover;
+
   }
   
 .text {
@@ -33,17 +40,7 @@
   transition: opacity .2s, visibility .2s;
 }
 
- .gallery > div {
-    width: 200px;
-    height: 200px;
-    float: left;
-		font-size: 25px;
-    background-position: center;
-    background-size: cover;
-   opacity: 0;
-  }
-  
-  .gallery > div:hover {
+  .gallery:hover .text {
     visibility: visible;
     opacity: 1;
     border: 2px solid hsl(111, 14%, 56%);
@@ -57,28 +54,67 @@
     }
   }
   
-</style>  
-<section class="gallery">
-  <div style="background-image: url(india.JPG)">
-  </div>
-  <div style="background-image: url(india2.JPG)"></div>
-  <div style="background-image: url(india3.JPG)"></div>
-  <div style="background-image: url(uchicago.JPG)"></div>
-  <div style="background-image: url(chicago.jpg)"></div>
-  <div style="background-image: url(cobb.JPG)"></div>
-  <div style="background-image: url(nyc2.JPG)"></div>
-  <div style="background-image: url(mexico.JPG)"></div>
-  <div style="background-image: url(nyc.JPG)"></div>
-  <div style="background-image: url(plane.JPG)"></div>
-  <div style="background-image: url(sweden.JPG)"></div>
-  <div style="background-image: url(peru.JPG)"></div>
-  <div style="background-image: url(italy.JPG)"></div>
-  <div style="background-image: url(italy2.JPG)"></div>
-  <div style="background-image: url(italy3.JPG)"></div>
-  <div style="background-image: url(chicago2.JPG)"></div>
-  <div style="background-image: url(france.JPG)"></div>
-  <div style="background-image: url(japan.jpeg)"></div>
-  <div style="background-image: url(florida.JPG)"></div>
-  <div style="background-image: url(florida2.png)"></div>
-  <div style="background-image: url(france2.JPG)"></div>
-</section>
+</style>
+<div class="gallery">
+  <img class="image" src="india.JPG" />
+  <p class="text">This image looks super neat.</p></div>
+<div class="gallery">
+  <img class="image" src="india2.JPG" />
+  <p class="text">This image looks super neat.</p></div>
+<div class="gallery">
+  <img class="image" src="india3.JPG" />
+  <p class="text">This image looks super neat.</p></div>
+<div class="gallery">
+  <img class="image" src="uchicago.jpg" />
+  <p class="text">This image looks super neat.</p></div>
+<div class="gallery">
+  <img class="image" src="chicago.JPG" />
+  <p class="text">This image looks super neat.</p></div>
+<div class="gallery">
+  <img class="image" src="cobb.JPG" />
+  <p class="text">This image looks super neat.</p></div>
+<div class="gallery">
+  <img class="image" src="nyc2.JPG" />
+  <p class="text">This image looks super neat.</p></div>
+<div class="gallery">
+  <img class="image" src="mexico.JPG" />
+  <p class="text">This image looks super neat.</p></div>
+<div class="gallery">
+  <img class="image" src="nyc.JPG" />
+  <p class="text">This image looks super neat.</p></div>
+<div class="gallery">
+  <img class="image" src="plane.JPG" />
+  <p class="text">This image looks super neat.</p></div>
+<div class="gallery">
+  <img class="image" src="sweden.JPG" />
+  <p class="text">This image looks super neat.</p></div>
+<div class="gallery">
+  <img class="image" src="peru.JPG" />
+  <p class="text">This image looks super neat.</p></div>
+<div class="gallery">
+  <img class="image" src="italy.JPG" />
+  <p class="text">This image looks super neat.</p></div>
+<div class="gallery">
+  <img class="image" src="italy2.JPG" />
+  <p class="text">This image looks super neat.</p></div>
+<div class="gallery">
+  <img class="image" src="italy3.JPG" />
+  <p class="text">This image looks super neat.</p></div>
+<div class="gallery">
+  <img class="image" src="chicago2.JPG" />
+  <p class="text">This image looks super neat.</p></div>
+<div class="gallery">
+  <img class="image" src="france.JPG" />
+  <p class="text">This image looks super neat.</p></div>
+<div class="gallery">
+  <img class="image" src="japan.jpeg" />
+  <p class="text">This image looks super neat.</p></div>
+<div class="gallery">
+  <img class="image" src="florida.JPG" />
+  <p class="text">This image looks super neat.</p></div>
+<div class="gallery">
+  <img class="image" src="florida2.png" />
+  <p class="text">This image looks super neat.</p></div>
+<div class="gallery">
+  <img class="image" src="france2.png" />
+  <p class="text">This image looks super neat.</p></div>
